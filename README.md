@@ -22,4 +22,44 @@ After we write these 2 we should make their names simpler. write these next:
 
 `speaker = pyttsx3.init()`
 
-`pdfreader = `
+`pdfreader = PyPDF2.PdfFileReader()`
+
+Now let's go to the next step.
+
+## The Start-up Code
+
+Now we get to the exciting part. First let's bring in the book we want to read. Download a PDF of the book and put the PDF in the folder you write this code. Make a variable called book and write this down:
+
+`book = open(Your pdf, 'rb')`
+
+Write this after the import codes and then simplify the names. Also, change `pdfreader` to:
+
+`pdfReader = PyPDF2.PdfFileReader(book)`
+
+This will say `pdfreader` to read the book.
+
+Now the real fun begins...
+
+## The Real Code
+
+Now we will start with the real code. First let's go simple. Write this:
+
+`speaker.say("Hello World")`
+
+And then:
+
+`speaker.runAndWait()`
+
+Run this. You will hear the speaker saying Hello world. Pretty cool right? Next we will write some more stuff.
+
+let's make a new variable called `pages`.
+
+`pages = pdfreader.numPages`
+
+This will read how many pages are there. Now check your PDF file to know how many pages there are. Then write this just below simplified plugins:
+
+`print(pages)`
+
+This will be used to check if the pdfreader can read the book. Now let's make pdfreader to get the text from each page and make speaker read them.
+
+`text = pdfreader.extractText()`
