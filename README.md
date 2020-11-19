@@ -12,12 +12,14 @@ When we try to make a new project, We get a screen for our project settings. Set
 
 ## Installation and Import of packages
 
-Before we begin writing our code, we have to install 2 packages. First go to Terminal and write `pip install pyttsx3` which will convert the text to speech. Then write `pip install ` in the terminal that will read the pdf you will give to read. After installing these 2 go to your coding area and import both of those packages:
+Before we begin writing our code, we have to install 2 packages. First go to Terminal and write `pip install pyttsx3` which will convert the text to speech. Then write `pip install PyPDF2` in the terminal that will read the pdf you will give to read. After installing these 2 go to your coding area and import both of those packages:
 
 `import pyttsx3`
 
-`import `
+`import PyPDF2`
 
-After we write thses 2 we should make their names simpler. write these next:
+After we write these 2 we should make their names simpler. write these next:
 
 `speaker = pyttsx3.init()`
+
+`pdfreader = `
